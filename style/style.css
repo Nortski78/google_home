@@ -1,3 +1,5 @@
+@import url("reset.css");
+
 body {
     background-color: rgb(255 255 255);
 }
@@ -8,6 +10,10 @@ a {
     font-size: 13px;
     opacity: 0.75;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .wrapper {
@@ -26,6 +32,8 @@ header {
     grid-area: header;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 6px;
 }
 
 main {
@@ -35,4 +43,61 @@ main {
 footer {
     grid-area: footer;
     background-color: rgb(242 242 242);
+}
+
+.header-left-links a {
+    margin: 0 0 0 15px;
+}
+
+.header-right-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-apps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.header-apps:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.header-right-links {
+    padding-right: 15px;
+}
+
+.header-right-links a {
+    margin-left: 15px;
+}
+
+#app-icon {
+    width: 17px;
+    height: 17px;
+    background-image: url("../images/googleicons.png");
+    background-position: -138px -44px;
+    opacity: 0.5;
+}
+
+#sign-in-btn {
+    background-color:#1a73e8;
+    opacity: 1;
+    margin: 0 8px 0 8px;
+    padding: 9px 23px 9px 23px;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+}
+
+#sign-in-btn:hover {
+    text-decoration: none;
+    opacity: 0.8;
+    box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);
 }
