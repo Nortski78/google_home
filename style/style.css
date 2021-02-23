@@ -115,6 +115,7 @@ footer {
 }
 
 footer a {
+    display: inline-block;
     padding: 15px;
 }
 
@@ -123,7 +124,7 @@ footer a {
     justify-content: space-between;
     padding: 0 20px 0 20px;
     flex-wrap: wrap;
-}
+ }
 
 #location {
     padding: 15px 30px;
@@ -144,8 +145,8 @@ footer a {
         margin: 0px;
     }
 
-    #footer-carbon-statement a {
-        padding: 0px;
+    #footer-carbon-statement img {
+       padding-top: 15px;
     }
 
     #footer-left-links {
