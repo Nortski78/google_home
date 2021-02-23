@@ -9,6 +9,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgb(255 255 255);
+    font-family: Arial, sans-serif;
 }
 
 a {
@@ -45,11 +46,6 @@ header {
 
 main {
     grid-area: content;
-}
-
-footer {
-    grid-area: footer;
-    background-color: rgb(242 242 242);
 }
 
 .header-left-links a {
@@ -107,4 +103,56 @@ footer {
     text-decoration: none;
     opacity: 0.8;
     box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);
+}
+
+/* Footer */
+
+footer {
+    grid-area: footer;
+    background-color: rgb(242 242 242);
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+footer a {
+    padding: 15px;
+}
+
+.footer-flex-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    flex-wrap: wrap;
+}
+
+#location {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+}
+
+@media (max-width: 1200px) {
+    .footer-flex-box {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #footer-carbon-statement {
+        display: flex;
+        order: 0;
+        width: 100%;
+        justify-content:  center;
+        margin: 0px;
+    }
+
+    #footer-carbon-statement a {
+        padding: 0px;
+    }
+
+    #footer-left-links {
+        order: 1;
+    }
+
+    #footer-right-links {
+        order: 2;
+    }
 }
