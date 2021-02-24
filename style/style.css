@@ -1,5 +1,9 @@
 @import url("reset.css");
 
+* {
+    box-sizing: border-box;
+  }
+
 html {
     height: 100%;
     width: 100%;
@@ -36,16 +40,14 @@ a:hover {
         "footer footer footer";
 }
 
+/* Header */
+
 header {
     grid-area: header;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 6px;
-}
-
-main {
-    grid-area: content;
 }
 
 .header-left-links a {
@@ -103,6 +105,92 @@ main {
     text-decoration: none;
     opacity: 0.8;
     box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);
+}
+
+/*********************************************/
+
+/* Content */
+
+main {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    min-height: 92px;
+    max-height: 290px;
+    height:  290px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.search-area-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-area-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 44px;
+    width: 584px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    margin: 20px 0;
+}
+
+.search-area-box:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 16px;
+    margin-right: 13px;
+    fill: #9aa0a6;
+}
+
+.search-box {
+    width: 85%;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.search-box input:focus {
+    outline: none;
+}
+
+.search-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    box-sizing: content-box;
+}
+
+.search-btns input {
+    padding: 8px 13px;
+    margin: 0 5px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #3c4043;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.search-btns input:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    border: 1px solid #dadce0;
+    color: #202124;
 }
 
 /* Footer */
